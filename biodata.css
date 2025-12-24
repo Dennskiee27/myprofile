@@ -1,0 +1,141 @@
+/* Allow scrolling on content-heavy pages */
+html, body {
+    overflow: auto !important;
+}
+
+body {
+    padding-top: 100px; /* Offset for fixed navigation */
+}
+
+.biodata-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+}
+
+/* --- Profile Header (prevents merging) --- */
+.header-section {
+    display: flex;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.profile-image {
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.core-details {
+    width: 65%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.glitch-name {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2rem;
+    color: var(--glow) !important;
+    margin: 0 0 15px 0;
+}
+
+.meta-list p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.meta-list p span {
+    color: var(--accent) !important;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* --- Content Styling --- */
+.content-section {
+    margin-bottom: 50px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.section-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.1rem;
+    color: var(--glow) !important;
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* --- Timetable --- */
+.table-wrapper {
+    overflow-x: auto; /* Scrollable on phone */
+}
+
+.timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--glass);
+}
+
+.timetable-table th, .timetable-table td {
+    padding: 15px;
+    border: 1px solid var(--glass-border);
+    text-align: left;
+}
+
+.timetable-table th {
+    background: var(--accent);
+    color: #ffffff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8rem;
+}
+
+.day-col {
+    font-weight: bold;
+    color: var(--glow) !important;
+}
+
+/* --- Skills --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* --- Responsiveness for Phone --- */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+    }
+    .profile-image, .core-details {
+        width: 100%;
+    }
+    .profile-image {
+        height: 300px;
+    }
+    .glitch-name {
+        font-size: 1.5rem;

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comments.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <title>Comments</title>
+</head>
+<body>
+    <nav class="dashboard">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="comments.html" class="active-nav">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="comments-container">
+        <h1 class="page-title">💬 GUESTBOOK_ARCHIVE</h1>
+
+        <div class="comment-form-section">
+            <h2 class="section-title">// LEAVE_A_MESSAGE</h2>
+            <form class="comment-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email (Private)" required>
+                </div>
+                <textarea placeholder="Transmit your thoughts here..." rows="5" required></textarea>
+                <button type="submit" class="send-button">SEND_MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="existing-comments">
+            <h2 class="section-title">// RECENT_TRANSMISSIONS</h2>
+
+            <div class="comment-item">
+                <div class="comment-meta">
+                    <span class="comment-author">Creative_User</span>
+                    <span class="comment-date">Dec 21, 2025</span>
+                </div>
+                <p class="comment-text">
+                    The Liquid Aurora aesthetic is stunning! The automated slideshow on the homepage feels very professional.
+                </p>
+            </div>
+
+            <div class="comment-item">
+                <div class="comment-meta">
+                    <span class="comment-author">Tech_Tester</span>
+                    <span class="comment-date">Dec 20, 2025</span>
+                </div>
+                <p class="comment-text">
+                    Great job on the white-text fix for dark mode. Everything is perfectly readable now.
+                </p>
+            </div>
+            
+            <div class="comment-item">
+                <div class="comment-meta">
+                    <span class="comment-author">Dev_Buddy</span>
+                    <span class="comment-date">Dec 19, 2025</span>
+                </div>
+                <p class="comment-text">The mobile navigation scrolling works perfectly on my phone! No more overlapping links.</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="theme-toggle" title="Switch Atmosphere">
+        <span id="theme-icon">DARK</span>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

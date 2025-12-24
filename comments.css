@@ -1,0 +1,123 @@
+/* Enable scrolling for comment history */
+html, body {
+    overflow: auto !important;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.comments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+}
+
+.page-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1rem;
+    color: var(--glow) !important;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+}
+
+/* --- Form Styling --- */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 60px;
+    background: var(--glass);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.comment-form input, 
+.comment-form textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.comment-form input:focus, 
+.comment-form textarea:focus {
+    border-color: var(--glow);
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.send-button {
+    background: var(--accent);
+    color: white !important;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.send-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(112, 0, 255, 0.4);
+}
+
+/* --- Comment Feed --- */
+.comment-item {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: var(--glow) !important;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.comment-text {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .page-title {
+        font-size: 1.3rem;
+    }
+}

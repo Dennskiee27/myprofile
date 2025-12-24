@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <title>Portfolio | Aurora Studios</title>
+</head>
+<body>
+    <nav class="dashboard">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="portfolio.html" class="active-nav">Portfolio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="portfolio-container">
+        <h1 class="page-title">🚀 PROJECTS_&_CREATIONS</h1>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image-container"><img src="a4.png" alt="3D Modeling"></div>
+                <div class="project-details">
+                    <h3>3D Modelling & Animation</h3>
+                    <p class="project-tag">BLENDER</p>
+                    <p>High-poly modeling and cinematic motion design focusing on realistic lighting and fluid movements.</p>
+                    <a href="#modal-blender" class="project-link">View Gallery &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container"><img src="w1.png" alt="Web Design"></div>
+                <div class="project-details">
+                    <h3>Web Design</h3>
+                    <p class="project-tag">HTML, CSS, JS</p>
+                    <p>Responsive UI/UX project featuring a clean glassmorphism interface for campus logistics.</p>
+                    <a href="#modal-web" class="project-link">View Gallery &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container"><img src="m3.png" alt="Media Production"></div>
+                <div class="project-details">
+                    <h3>Media Production</h3>
+                    <p class="project-tag">PREMIERE & PHOTOSHOP</p>
+                    <p>Advanced color grading and sound design tailored for high-impact digital storytelling.</p>
+                    <a href="#modal-media" class="project-link">View Gallery &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="animation-showcase">
+            <h2 class="section-title">// ADOBE_ANIMATION_SHOWCASE</h2>
+            <div class="animation-embed">
+                <object id="EdgeID2" type="text/html" width="570" height="420" data-dw-widget="Edge" data="Untitled-1/Assets/Untitled-1.html">
+                </object>
+            </div>
+        </div>
+
+        <div class="events-section">
+            <h2 class="section-title">// UNIVERSITY_EVENTS</h2>
+            <div class="events-grid">
+                <img src="E1.jpeg" alt="Event 1"> <img src="E2.jpeg" alt="Event 2">
+                <img src="E3.jpeg" alt="Event 3"> <img src="E4.jpeg" alt="Event 4">
+                <img src="E5.jpeg" alt="Event 5"> <img src="E6.jpeg" alt="Event 6">
+                <img src="E7.jpeg" alt="Event 7">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-blender" class="lightbox-modal">
+        <div class="modal-content">
+            <a href="#_" class="modal-close">&times;</a>
+            <div class="modal-gallery">
+                <img src="a1.png" alt="B1"> <img src="a2.png" alt="B2">
+                <img src="a3.png" alt="B3"> <img src="a4.png" alt="B4">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-web" class="lightbox-modal">
+        <div class="modal-content">
+            <a href="#_" class="modal-close">&times;</a>
+            <div class="modal-gallery">
+                <img src="w5.png" alt="W5"> <img src="w2.png" alt="W2">
+                <img src="w3.png" alt="W3"> <img src="w4.png" alt="W4">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-media" class="lightbox-modal">
+        <div class="modal-content">
+            <a href="#_" class="modal-close">&times;</a>
+            <div class="modal-gallery">
+                <img src="m1.png" alt="M1"> <img src="m2.png" alt="M2">
+                <img src="m3.png" alt="M3">
+            </div>
+        </div>
+    </div>
+
+    <button id="theme-toggle"> <span id="theme-icon">DARK</span> </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <title>Video</title>
+</head>
+<body>
+    <nav class="dashboard">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="video.html" class="active-nav">Video</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <h1 class="page-title">🎬 VIDEOS</h1>
+
+        <div class="video-grid">
+            
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <video controls poster="t1.png">
+                        <source src="v1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2 class="video-title">// LOCAL_MP4_SHOWCASE</h2>
+            </div>
+
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=d9DxwwcCTa8" 
+                        title="YouTube Video"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h2 class="video-title">The Lazy Song - Bruno Mars (Group 2 DREAMWALK)</h2>
+            </div>
+
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=HOuawKX0umk" 
+                        title="YouTube Video"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h2 class="video-title">Midnight Edge Car Selection Menu | Group 4 Assignment Animation</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <button id="theme-toggle" title="Switch Atmosphere">
+        <span id="theme-icon">DARK</span>
+    </button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

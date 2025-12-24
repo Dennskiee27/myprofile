@@ -1,0 +1,81 @@
+/* Allow scrolling for video content */
+html, body {
+    overflow: auto !important;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+}
+
+.page-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+}
+
+/* --- VIDEO GRID --- */
+.video-grid {
+    display: grid;
+    /* Responsive layout: 2 columns on desktop, 1 on phone */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.video-item {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    border-color: var(--glow);
+    transform: translateY(-5px);
+}
+
+/* Maintain 16:9 Aspect Ratio */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* (9/16)*100 */
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper iframe, 
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: var(--glow) !important;
+    text-align: center;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .page-title {
+        font-size: 1.4rem;
+    }
+}
